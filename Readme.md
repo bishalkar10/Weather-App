@@ -18,4 +18,4 @@ npx tailwindcss -i ./style.css -o .dist/output.css -- watch
 ```    
 ## How To Use   
 Click on the search input box and type your city name and click the search icon. You can see a image like this :   
-![Screenshot of the search results](./image/weather_app_screenshot.png)
+![Screenshot of the search results](./image/weather_app_screenshot.jpg)
