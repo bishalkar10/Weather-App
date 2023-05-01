@@ -61,7 +61,7 @@ function display(response) {
 searchButton.addEventListener("click", async () => {
     const cityName = searchBox.value;
     // if city name is empty, then display the error message
-    if (cityName === "") {
+    if (cityName.trim() === "") {
         errorMessage.innerText = "Please Enter a valid City name";
         // and clear the screen if you have a search result on the screen 
         city.innerText = ""
