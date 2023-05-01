@@ -15,14 +15,14 @@
 
     <!-- Main div container  -->
     <div
-        class="relative dark:bg-gray-700 h-[90%] w-[75%] rounded-lg mobile:w-screen mobile:h-screen flex flex-col gap-3 items-center justify-center bg-[#4ab0c2]">
+        class="relative dark:bg-gray-700 w-screen h-screen sm:h-[90%] sm:w-[75%] rounded-lg  flex flex-col gap-3 items-center justify-center bg-[#4ab0c2]">
 
         <!-- city name -->
-        <p id="city" class=" dark:text-slate-200 text-4xl text-white top-10"></p>
+        <p id="city" class=" dark:text-slate-200 text-4xl sm:text-5xl text-white top-10"></p>
 
         <!-- Search Bar -->
         <div class="relative flex">
-            <input class="dark:bg-slate-900 dark:text-slate-300 pl-5 h-8 w-72 outline-none rounded-xl" type="text"
+            <input class="dark:bg-slate-900 dark:text-slate-300 pl-5 h-9 w-72 sm:h-10 sm:w-80 outline-none rounded-xl" type="text"
                 placeholder="Enter City Name and Hit Search">
             <!-- Search button is relative to the input tag and it's inside it -->
             <button id="search-button" class="z-1 absolute top-0 right-0 h-full w-10 border-none rounded-r-xl"><i
@@ -38,7 +38,7 @@
                 <div id="celcius" class="text-2xl dark:text-slate-200 text-white"></div>
             </div>
             <!-- temperature feels like -->
-            <p id="feels-like" class="dark:text-slate-200 text-white text-xs"></p>
+            <p id="feels-like" class="dark:text-slate-200 text-white text-xs sm:text-sm"></p>
         </div>
 
         <!--Cloud condition -->
