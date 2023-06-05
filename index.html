@@ -11,42 +11,38 @@
     <script src="./dist/main.js" defer></script>
 </head>
 
-<body class="h-screen flex items-center justify-center dark:bg-zinc-800">
+<body class="flex items-center justify-center h-screen dark:bg-zinc-800">
 
     <!-- Main div container  -->
     <div
         class="relative dark:bg-gray-700 w-screen h-screen sm:h-[90%] sm:w-[75%] rounded-lg  flex flex-col gap-3 items-center justify-center bg-[#4ab0c2]">
 
         <!-- city name -->
-        <p id="city" class=" dark:text-slate-200 text-4xl sm:text-5xl text-white top-10"></p>
+        <p id="city" class="text-4xl text-white  dark:text-slate-200 sm:text-5xl top-10"></p>
 
         <!-- Search Bar -->
         <div class="relative flex">
-            <input class="dark:bg-slate-900 dark:text-slate-300 pl-5 h-9 w-72 sm:h-10 sm:w-80 outline-none rounded-xl" type="text"
-                placeholder="Enter City Name and Hit Search">
+            <input class="pl-5 outline-none dark:bg-slate-900 dark:text-slate-300 h-9 w-72 sm:h-10 sm:w-80 rounded-xl"
+                type="text" placeholder="Enter City Name and Hit Search">
             <!-- Search button is relative to the input tag and it's inside it -->
-            <button id="search-button" class="z-1 absolute top-0 right-0 h-full w-10 border-none rounded-r-xl"><i
+            <button id="search-button" class="absolute top-0 right-0 w-10 h-full border-none z-1 rounded-r-xl"><i
                     class="fa fa-search dark:text-slate-300 text-[#2b2727]"></i></button>
         </div>
 
-        <p id="errorMessage" class="dark:text-slate-200 text-white text-sm"></p>
+        <p id="errorMessage" class="text-sm text-white dark:text-slate-200"></p>
 
         <!-- Current Temperature -->
         <div class="flex flex-col items-center">
             <div class="flex">
-                <div id="curr-temp" class="dark:text-slate-200 text-white flex text-6xl"></div>
-                <div id="celcius" class="text-2xl dark:text-slate-200 text-white"></div>
+                <div id="curr-temp" class="flex text-6xl text-white dark:text-slate-200"></div>
+                <div id="celcius" class="text-2xl text-white dark:text-slate-200"></div>
             </div>
             <!-- temperature feels like -->
-            <p id="feels-like" class="dark:text-slate-200 text-white text-xs sm:text-sm"></p>
+            <p id="feels-like" class="text-xs text-white dark:text-slate-200 sm:text-sm"></p>
         </div>
 
         <!--Cloud condition -->
-        <p class="dark:text-slate-200 text-white flex gap-2 text-4xl" id="sky"></p>
-
-
-        <!-- <div id="aqi" class="hidden-item h-6 w-20 rounded-xl text-center text-white  bg-opacity-[0.3] bg-[#eee]">AQI 80
-        </div> -->
+        <p class="flex gap-2 text-4xl text-white dark:text-slate-200" id="sky"></p>
 
 
     </div>
